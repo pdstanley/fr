@@ -22,11 +22,10 @@ output_movie = cv2.VideoWriter('media/output_test4_a.avi', fourcc, 30.006912, (1
     # width = vcap.get(cv2.cv.CV_CAP_PROP_FRAME_WIDTH)   # float
     # height = vcap.get(cv2.cv.CV_CAP_PROP_FRAME_HEIGHT) # float
 
-    # or
-    width = vcap.get(3)  # float
-    height = vcap.get(4) # float
-
-    # it gives me 0.0 :/
+    # self._name = name + '.mp4'
+    # self._cap = VideoCapture(0)
+    # self._fourcc = VideoWriter_fourcc(*'MP4V')
+    # self._out = VideoWriter(self._name, self._fourcc, 20.0, (640,480))
 
 
 # Load some sample pictures and learn how to recognize them.
