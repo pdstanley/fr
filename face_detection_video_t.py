@@ -11,12 +11,23 @@ import cv2
 input_movie = cv2.VideoCapture("media_test/person1_test4.mp4")
 length = int(input_movie.get(cv2.CAP_PROP_FRAME_COUNT))
 
-# Create an output movie file (make sure resolution/frame rate matches input video!)
+# Create an output movie file (make sure frame rate/size matches input video!)
 # fourcc = cv2.VideoWriter_fourcc(*'XVID')
 fourcc = cv2.VideoWriter_fourcc(*'H264')
 # fourcc = cv2.VideoWriter_fourcc(*'X264')
 # output_movie = cv2.VideoWriter('media/output_test_2.avi', fourcc, 29.97, (640, 360))
 output_movie = cv2.VideoWriter('media/output_test4_a.avi', fourcc, 30.006912, (1920, 1080))
+
+    # fps = vcap.get(cv2.cv.CV_CAP_PROP_FPS) #30.00
+    # width = vcap.get(cv2.cv.CV_CAP_PROP_FRAME_WIDTH)   # float
+    # height = vcap.get(cv2.cv.CV_CAP_PROP_FRAME_HEIGHT) # float
+
+    # or
+    width = vcap.get(3)  # float
+    height = vcap.get(4) # float
+
+    # it gives me 0.0 :/
+
 
 # Load some sample pictures and learn how to recognize them.
 lmm_image = face_recognition.load_image_file("media_test/person1_test.jpg")
