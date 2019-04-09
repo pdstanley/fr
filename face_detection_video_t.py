@@ -28,6 +28,21 @@ output_movie = cv2.VideoWriter('media/output_test4_a.avi', fourcc, 30.006912, (1
     # self._out = VideoWriter(self._name, self._fourcc, 20.0, (640,480))
 
 
+    # – / avi / 112512 kB / I420 / WMP, VLC, Films&TV, MovieMaker
+    # MJPG / avi / 14115 kB / MJPG / VLC
+    # MJPG / mp4 / 5111 kB / 6C / VLC
+    # CVID / avi / 7459 kB / cvid / WMP, VLC, MovieMaker
+    # MSVC / avi / 83082 kB / CRAM / WMP, VLC
+    # X264 / avi / 187 kB / H264 / WMP, VLC, Films&TV, MovieMaker
+    # XVID / avi / 601 kB / XVID / WMP, VLC, MovieMaker
+    # XVID / mp4 / 587 kB / 20 / WMP, VLC, Films&TV, MovieMaker
+
+    # w = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+    # h = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+    # fps = int(cap.get(cv2.CAP_PROP_FPS))
+    # n_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+
+
 # Load some sample pictures and learn how to recognize them.
 lmm_image = face_recognition.load_image_file("media_test/person1_test.jpg")
 lmm_face_encoding = face_recognition.face_encodings(lmm_image)[0]
